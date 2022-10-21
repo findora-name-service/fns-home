@@ -1,0 +1,90 @@
+.header_box{
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+.header_info{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  img{
+    width: 120px;
+    height: 48px;
+  }
+  .button_box{
+    display: flex;
+    button{
+      cursor: pointer;
+      border: none;
+      margin: 0 20px;
+      display: block;
+      padding: 10px 39px;
+      border-radius: 24px;
+      width: 112px;
+      height: 48px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+    }
+
+    .docbutton{
+      color: #FFFFFF;
+      background-color: transparent;
+    }
+    .appbutton{
+      color: #8A5CFF;
+      background: #FFFFFF;
+    }
+  }
+}
+
+&.no_opacity {
+  .header_info{
+    height: 100%;
+    background-color: #fff !important;
+  }
+  .appbutton{
+    color: #fff !important;
+    background-color: #8A5CFF !important;
+  }
+  .docbutton{
+    color: #000 !important;
+    background: transparent !important;
+  }
+}
+}
+@media only screen and (max-width: 576px) {
+  .header_box{
+    height: 44px;
+    width: 100% !important;
+    padding: 0 16px;
+    .header_info{
+
+      img{
+        width: 80px;
+        height: 32px;
+      }
+    .button_box{
+      button{
+        border: none;
+        margin: 0 ;
+        padding: 6px 24px;
+        width: 75px;
+        height: 34px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+      }
+
+    }
+  }
+  
+  }
+}

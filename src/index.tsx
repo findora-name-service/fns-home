@@ -1,14 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
+// import App from './App';
+import Home from './pages/Home';
+import Header from './components/Header'
 import reportWebVitals from './reportWebVitals';
-
+import Home5 from './components/Home5';
+import Home2 from './components/Home2';
+import Home3 from './components/Home3';
+import Home4 from './components/Home4';
+import ScrollTip from './components/scrollTip';
+import './index.less'
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <Header/>
+    <Home />
+    <Home2/>
+    <Home3/>
+    <Home4/>
+    <Home5/>
+    <ScrollTip/>
   </React.StrictMode>
 );
 

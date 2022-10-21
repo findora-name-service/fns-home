@@ -1,0 +1,80 @@
+.scrollTip_box{
+  height: 2px;
+  position: fixed;
+  right: -152px;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  transform: rotate(90deg);
+  p{
+    margin: 0 30px;
+  }
+  .pagenum1{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+  }
+  .allpagenum1{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .pagenum2, .pagenum3 ,.pagenum4 ,.pagenum5{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8A5CFF;
+  }
+  .allpagenum2,.allpagenum3,.allpagenum4,.allpagenum5{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.3);
+  }
+  ul{  
+    background: rgba(138, 92, 255, 0.1);
+    width: 250px;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    li{
+      width: 50px;
+      list-style: none;
+    }
+  }
+  .isTabnum1{
+    background: rgba(255, 255, 255, 0.5);
+    li:nth-child(1){
+    background: #FFFFFF;
+    }
+   }
+  .isTabnum2{
+    li:nth-child(2){
+    background: #8A5CFF;
+    }
+  }
+   .isTabnum3{
+    li:nth-child(3){
+    background: #8A5CFF;
+    }
+   }
+   .isTabnum4{
+    li:nth-child(4){
+    background: #8A5CFF;
+    }
+   }
+   .isTabnum5{
+    li:nth-child(5){
+    background: #8A5CFF;
+    }
+   }
+}
+@media only screen and (max-width: 576px) {
+  .scrollTip_box{
+    display: none;
+  }
+}
