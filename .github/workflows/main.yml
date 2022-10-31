@@ -3,10 +3,10 @@ name: Building Images
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
-  build-main-image:
-    name: Build Main Branch Image
+  build-master-image:
+    name: Build Master Branch Image
     concurrency: ci-building-image
     runs-on: ubuntu-latest
     steps:
