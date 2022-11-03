@@ -4,6 +4,8 @@ import Img1 from './../../assets/image/jia.svg';
 import Img2 from '../../assets/image/jian.svg';
 import Footer from './../../components/Footer';
 import './index.less';
+import Header from './../../components/Header'
+
 
 export interface IHome5 {
 
@@ -14,6 +16,8 @@ const Home5: React.FC<IHome5> = ({style }) => {
   const { Panel } = Collapse;
 
   return (
+    < div style={{  overflowY:'scroll',height:'100vh'}}>
+<Header isOpacity={true}/>
     <section className="Home5">
       <h2>A&Q</h2>
       <Space direction="vertical">
@@ -31,7 +35,7 @@ const Home5: React.FC<IHome5> = ({style }) => {
             expandIcon={({ isActive }) => (isActive ? <img src={Img2} alt="" /> : <img src={Img1} alt="" />)}
           >
             <Panel header="FNS can be transferred ?" key="2">
-              <p>{'Yes, FNS is essentially a FRC-20 non-fungible token that can be bought, sold or transferred.'}</p>
+              <p>{'Yes, FNS is essentially a FRC-721 non-fungible token that can be bought, sold or transferred.'}</p>
             </Panel>
           </Collapse>
           <Collapse
@@ -59,8 +63,9 @@ const Home5: React.FC<IHome5> = ({style }) => {
             </Panel>
           </Collapse>
         </Space>
-        <Footer/>
     </section>
+        <Footer/>
+    </div>
    
   );
 };

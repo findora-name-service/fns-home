@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from './../../assets/image/home3Logo.svg'
 import './index.less';
+import Header from './../../components/Header'
 
 export interface IHome3 {
 
@@ -9,7 +10,8 @@ export interface IHome3 {
 
 const Home3: React.FC<IHome3> = ({style }) => {
   return (
-  
+  <>
+<Header isOpacity={true}/>
     <section className="Home3">
      <img src={Logo} alt="" />
       <div className='Home3_box'>
@@ -18,6 +20,7 @@ const Home3: React.FC<IHome3> = ({style }) => {
       <button>launch App</button>
      </div>
     </section>
+  </>
    
   );
 };

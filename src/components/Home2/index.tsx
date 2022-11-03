@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from './../../assets/image/home2Logo.svg'
+import Header from './../../components/Header'
 
 import './index.less';
 
@@ -10,7 +11,8 @@ export interface IHome2 {
 
 const Home2: React.FC<IHome2> = ({style }) => {
   return (
-  
+    <>
+<Header isOpacity={true}/>
     <section className="Home2">
      <div className='Home2_box'>
       <h2 >Recommend <br /> to join .fra to get rewards</h2>
@@ -19,6 +21,7 @@ const Home2: React.FC<IHome2> = ({style }) => {
      </div>
      <img src={Logo} alt="" />
     </section>
+  </>
    
   );
 };

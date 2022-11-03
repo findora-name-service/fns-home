@@ -5,6 +5,7 @@ import l1 from './../../assets/image/Roadmap1.svg';
 import l2 from './../../assets/image/Roadmap2.svg';
 import l3 from './../../assets/image/Roadmap3.svg';
 import l4 from './../../assets/image/Roadmap4.svg';
+import Header from './../../components/Header'
 
 import './index.less';
 
@@ -81,6 +82,8 @@ function Home4() {
   }
 
   return (
+    <>
+<Header isOpacity={true}/>
       <div className="Home4">
         <div className="bottom_container">
           <h2>Roadmap</h2>
@@ -124,6 +127,7 @@ function Home4() {
 
         </ul>
         </div>
+    </>
   );
 }
 export default Home4;
