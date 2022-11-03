@@ -11,9 +11,8 @@ export interface IHome2 {
 
 const Home2: React.FC<IHome2> = ({style }) => {
   return (
-    <>
-<Header isOpacity={true}/>
-    <section className="Home2">
+
+    <section className="Home2" id="Home2" >
      <div className='Home2_box'>
       <h2 >Recommend <br /> to join .fra to get rewards</h2>
       <h3>FNS registration with .fra can get the registration fee waiver, and the referrer can also get a commission</h3>
@@ -21,7 +20,7 @@ const Home2: React.FC<IHome2> = ({style }) => {
      </div>
      <img src={Logo} alt="" />
     </section>
-  </>
+
    
   );
 };

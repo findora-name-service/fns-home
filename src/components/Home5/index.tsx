@@ -4,7 +4,6 @@ import Img1 from './../../assets/image/jia.svg';
 import Img2 from '../../assets/image/jian.svg';
 import Footer from './../../components/Footer';
 import './index.less';
-import Header from './../../components/Header'
 
 
 export interface IHome5 {
@@ -16,9 +15,8 @@ const Home5: React.FC<IHome5> = ({style }) => {
   const { Panel } = Collapse;
 
   return (
-    < div style={{  overflowY:'scroll',height:'100vh'}}>
-<Header isOpacity={true}/>
-    <section className="Home5">
+    < div style={{  overflowY:'scroll',height:'100vh'}} id="Home5" >
+    <section className="Home5" >
       <h2>A&Q</h2>
       <Space direction="vertical">
           <Collapse

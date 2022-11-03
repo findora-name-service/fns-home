@@ -4,43 +4,44 @@ import logo2 from './../../assets/image/logo2.svg'
 import classnames from 'classnames';
 
 import './index.less';
+import { useEffect, useState } from 'react';
 export interface IHeader{
-  isOpacity?:boolean;
+  // isOpacity?:boolean;
 }
 
-const Header: React.FC<IHeader>=({isOpacity})=> {
-  // const [isOpacity, setIsOpacity] = useState(false);
-  // function headerBackgroundColorScroll(e:any) {
-  //   let scrollTop = 0;
-  //   if (document.documentElement && document.documentElement.scrollTop) {
-  //     scrollTop = document.documentElement.scrollTop;
-  //   } else if (document.body) {
-  //     scrollTop = document.body.scrollTop;
-  //   }
+const Header: React.FC<IHeader>=()=> {
+  const [isOpacity, setIsOpacity] = useState(false);
+  function headerBackgroundColorScroll(e:any) {
+    let scrollTop = 0;
+    if (document.documentElement && document.documentElement.scrollTop) {
+      scrollTop = document.documentElement.scrollTop;
+    } else if (document.body) {
+      scrollTop = document.body.scrollTop;
+    }
 
-  //   if (scrollTop <= window.innerHeight) {
-  //     setIsOpacity(false);
-  //   } else {
-  //     setIsOpacity(true);
-  //   }
-  //   // console.log(scrollTop);
+    if (scrollTop <= window.innerHeight) {
+      setIsOpacity(false);
+    } else {
+      setIsOpacity(true);
+    }
+    // console.log(scrollTop);
 
-  //   let top =  window.innerHeight;
-  //   if (scrollTop >  window.innerHeight) {
-  //     top = 0;
-  //   } else {
-  //     top =  window.innerHeight - scrollTop;
-  //   }
-  //   // setScrollTop(top);
-  //   // setIsOpacity(true);
-  // }
+    let top =  window.innerHeight;
+    if (scrollTop >  window.innerHeight) {
+      top = 0;
+    } else {
+      top =  window.innerHeight - scrollTop;
+    }
+    // setScrollTop(top);
+    // setIsOpacity(true);
+  }
 
-  // useEffect(() => {
-  //   window.addEventListener('scroll', headerBackgroundColorScroll);
-  //   return () => {
-  //     window.removeEventListener('scroll', headerBackgroundColorScroll);
-  //   };
-  // }, []);
+  useEffect(() => {
+    window.addEventListener('scroll', headerBackgroundColorScroll);
+    return () => {
+      window.removeEventListener('scroll', headerBackgroundColorScroll);
+    };
+  }, []);
   return (
    <div className={classnames('header_box', { no_opacity: isOpacity })}>
     <div className='header_info'>

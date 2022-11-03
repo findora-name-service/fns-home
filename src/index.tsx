@@ -6,15 +6,17 @@ import reportWebVitals from './reportWebVitals';
 
 
 import './index.less'
+import Header from './components/Header';
+import ScrollTip from './components/scrollTip';
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
 root.render(
   <React.StrictMode>
-    {/* <Header/> */}
+    <Header/>
     <Home />       
-    {/* <ScrollTip/> */}
+    <ScrollTip/>
   </React.StrictMode>
 );
 

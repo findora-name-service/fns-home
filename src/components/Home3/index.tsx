@@ -10,9 +10,8 @@ export interface IHome3 {
 
 const Home3: React.FC<IHome3> = ({style }) => {
   return (
-  <>
-<Header isOpacity={true}/>
-    <section className="Home3">
+
+    <section className="Home3" id="Home3" >
      <img src={Logo} alt="" />
       <div className='Home3_box'>
       <h2 >All in one</h2>
@@ -20,7 +19,7 @@ const Home3: React.FC<IHome3> = ({style }) => {
       <button>launch App</button>
      </div>
     </section>
-  </>
+
    
   );
 };

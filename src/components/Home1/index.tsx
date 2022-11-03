@@ -10,14 +10,13 @@ function Home1() {
     setsearchvalue(e.target.value)
   } 
   return (
-    <>
-<Header isOpacity={false}/>
-   <div className='home1_box'>
+ 
+   <div className='home1_box' id="Home1" >
      <h2>Have your first privacy web3 identity</h2>
      <div className='search_box'>
       <div className='input_box'>
         <img src={search} alt="" />
-        <input type="text" placeholder='Search Names' onChange={searchInfo}/>
+        <input type="text" placeholder='Search Names' onChange={searchInfo} onKeyDown={()=>{searchvalue!==''&&window.open(`https://app.fns.gg/search/${searchvalue}` ,'_self')}}/>
         <p>.fra</p>
       </div>
       <button 
@@ -25,7 +24,7 @@ function Home1() {
       >Search</button>
      </div>
    </div>
-   </>
+
   );
 }
 export default Home1;
