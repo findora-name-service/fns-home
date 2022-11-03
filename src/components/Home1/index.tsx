@@ -16,7 +16,7 @@ function Home1() {
      <div className='search_box'>
       <div className='input_box'>
         <img src={search} alt="" />
-        <input type="text" placeholder='Search Names' onChange={searchInfo} onKeyDown={()=>{searchvalue!==''&&window.open(`https://app.fns.gg/search/${searchvalue}` ,'_self')}}/>
+        <input type="text" placeholder='Search Names' onChange={searchInfo} onBlur={()=>{searchvalue!==''&&window.open(`https://app.fns.gg/search/${searchvalue}` ,'_self')}}/>
         <p>.fra</p>
       </div>
       <button 
