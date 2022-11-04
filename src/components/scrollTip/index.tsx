@@ -9,7 +9,7 @@ export interface IscrollTip {
 const scrollTip: React.FC<IscrollTip> = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const [isTabnum, setisTabnum] = useState(1);
-  console.log(isTabnum)
+  // console.log(isTabnum)
 
   function headerBackgroundColorScroll(e:any) {
     let scrollTop = 0;

@@ -46,11 +46,13 @@ function Home() {
       scrollTop = document.body.scrollTop;
     }
       if (scrollTop <= 0.5*window.innerHeight) {
-       handleGotoAnchor('Home1')
+        
+        handleGotoAnchor('Home1')
         setOpacity('Home1')
 
     } else if(scrollTop <= 1.5*window.innerHeight){
-     handleGotoAnchor('Home2')
+      
+      handleGotoAnchor('Home2')
       setOpacity('Home2')
 
     }
@@ -81,13 +83,30 @@ function Home() {
     }
 
   }
+useEffect(() => {
+  if(window.innerWidth >=760){ 
+  
+if(Opacity==='Home1'||''){
+    document.documentElement.scrollTop=0
+  }
+  else if(Opacity==='Home2'){
+    document.documentElement.scrollTop=window.innerHeight
+  }else if(Opacity==='Home3'){
+    document.documentElement.scrollTop=2*window.innerHeight
+  }else if(Opacity==='Home4'){
+    document.documentElement.scrollTop=3*window.innerHeight
+  }else if(Opacity==='Home5'){
+    document.documentElement.scrollTop=4*window.innerHeight
+  }
+}
+})
 
   useEffect(() => {
-    
-      setTimeout(() => {
+
+    setTimeout(() => {
         setopacitynum(opacitynum+=1)
       }, 500);
-
+ 
       return () => {
         setopacitynum(0)   
        };
@@ -106,8 +125,7 @@ function Home() {
   return (
     <div className='home_box'>
       <div className='pc_home'>
-
-        <Home1 Opacity={Opacity==='Home1'?opacitynum:0}/>
+        <Home1 Opacity={Opacity==='Home1'?opacitynum:0} />
         <Home2 Opacity={Opacity==='Home2'?opacitynum:0}/>
         <Home3 Opacity={Opacity==='Home3'?opacitynum:0}/>
         <Home4 Opacity={Opacity==='Home4'?opacitynum:0}/>
