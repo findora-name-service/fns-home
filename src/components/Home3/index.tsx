@@ -4,14 +4,13 @@ import './index.less';
 import Header from './../../components/Header'
 
 export interface IHome3 {
-
-  style?: React.CSSProperties;
+  Opacity?:any
 }
 
-const Home3: React.FC<IHome3> = ({style }) => {
+const Home3: React.FC<IHome3>=({Opacity})=> {
   return (
 
-    <section className="Home3" id="Home3" >
+    <section className="Home3" id="Home3" style={{opacity:`${Opacity}`}}>
      <img src={Logo} alt="" />
       <div className='Home3_box'>
       <h2 >All in one</h2>
@@ -25,7 +24,7 @@ const Home3: React.FC<IHome3> = ({style }) => {
 };
 
 Home3.defaultProps = {
-  style:undefined,
+  Opacity:undefined,
 };
 
 export default Home3;

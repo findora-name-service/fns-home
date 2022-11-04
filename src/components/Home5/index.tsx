@@ -7,15 +7,14 @@ import './index.less';
 
 
 export interface IHome5 {
-
-  style?: React.CSSProperties;
+  Opacity?:any
 }
 
-const Home5: React.FC<IHome5> = ({style }) => {
+const Home5: React.FC<IHome5>=({Opacity})=> {
   const { Panel } = Collapse;
 
   return (
-    < div style={{  overflowY:'scroll',height:'100vh'}} id="Home5" >
+    < div style={{  overflowY:'scroll',height:'100vh',opacity:`${Opacity}`}} id="Home5"  >
     <section className="Home5" >
       <h2>A&Q</h2>
       <Space direction="vertical">
@@ -69,7 +68,7 @@ const Home5: React.FC<IHome5> = ({style }) => {
 };
 
 Home5.defaultProps = {
-  style:undefined,
+  Opacity:undefined,
 };
 
 export default Home5;

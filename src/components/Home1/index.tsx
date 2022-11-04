@@ -1,17 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import search from './../../assets/image/search.svg'
 import Header from './../../components/Header'
 import './index.less';
+// Opacity
+export interface IHome1 {
+  Opacity?:any
+}
 
-function Home1() {
+const Home1: React.FC<IHome1>=({Opacity})=> {
   const [searchvalue, setsearchvalue] = useState('')
-  // https://app.fns.gg/search/aaaaa
   const searchInfo = (e:any)=>{
     setsearchvalue(e.target.value)
   } 
+
   return (
- 
-   <div className='home1_box' id="Home1" >
+   <div className='home1_box' id="Home1" style={{opacity:`${Opacity}`}}>
      <h2>Have your first privacy web3 identity</h2>
      <div className='search_box'>
       <div className='input_box'>

@@ -8,7 +8,11 @@ import l4 from './../../assets/image/Roadmap4.svg';
 
 import './index.less';
 
-function Home4() {
+export interface IHome4 {
+  Opacity?:any
+}
+
+const Home4: React.FC<IHome4>=({Opacity})=> {
   const list = [
     ['2022.Q4  ', 'FNS official launch on findora',  'l1'],
     ['2023.Q1   ', '.fra support more on-chain assets and social data integration',  'l2'],
@@ -82,7 +86,7 @@ function Home4() {
 
   return (
 
-      <div className="Home4" id="Home4" >
+      <div className="Home4" id="Home4" style={{opacity:`${Opacity}`}} >
         <div className="bottom_container">
           <h2>Roadmap</h2>
           {list.length > 3 && (

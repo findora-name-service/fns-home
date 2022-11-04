@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Logo from './../../assets/image/home2Logo.svg'
 import Header from './../../components/Header'
 
 import './index.less';
 
 export interface IHome2 {
-
-  style?: React.CSSProperties;
+  Opacity?:any
 }
 
-const Home2: React.FC<IHome2> = ({style }) => {
-  return (
+const Home2: React.FC<IHome2>=({Opacity})=> {
 
-    <section className="Home2" id="Home2" >
+
+  return (
+    <section className="Home2" id="Home2" style={{opacity:`${Opacity}`}}>
      <div className='Home2_box'>
       <h2 >Recommend <br /> to join .fra to get rewards</h2>
       <h3>FNS registration with .fra can get the registration fee waiver, and the referrer can also get a commission</h3>
@@ -26,7 +26,7 @@ const Home2: React.FC<IHome2> = ({style }) => {
 };
 
 Home2.defaultProps = {
-  style:undefined,
+  Opacity:undefined,
 };
 
 export default Home2;
