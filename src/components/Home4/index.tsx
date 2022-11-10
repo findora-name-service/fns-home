@@ -85,8 +85,8 @@ const Home4: React.FC<IHome4>=({Opacity})=> {
   }
 
   return (
-
-      <div className="Home4" id="Home4" style={{opacity:`${Opacity}`}} >
+ 
+      <div className="Home4 hometest" id="Home4"  >
         <div className="bottom_container">
           <h2>Roadmap</h2>
           {list.length > 3 && (
@@ -128,7 +128,9 @@ const Home4: React.FC<IHome4>=({Opacity})=> {
             })}
 
         </ul>
+
         </div>
+
 
   );
 }

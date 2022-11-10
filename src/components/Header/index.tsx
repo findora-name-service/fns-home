@@ -6,10 +6,10 @@ import classnames from 'classnames';
 import './index.less';
 import { useEffect, useState } from 'react';
 export interface IHeader{
-  // isOpacity?:boolean;
+  pc_isOpacity?:boolean;
 }
 
-const Header: React.FC<IHeader>=()=> {
+const Header: React.FC<IHeader>=({pc_isOpacity})=> {
   const [isOpacity, setIsOpacity] = useState(false);
   function headerBackgroundColorScroll(e:any) {
     let scrollTop = 0;
@@ -20,7 +20,7 @@ const Header: React.FC<IHeader>=()=> {
     }
 
     if (scrollTop <= window.innerHeight) {
-      setIsOpacity(false);
+ setIsOpacity(false);
     } else {
       setIsOpacity(true);
     }
@@ -37,15 +37,16 @@ const Header: React.FC<IHeader>=()=> {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', headerBackgroundColorScroll);
+    window.innerWidth<=760&& window.addEventListener('scroll', headerBackgroundColorScroll);
+   
     return () => {
-      window.removeEventListener('scroll', headerBackgroundColorScroll);
+      window.innerWidth<=760&& window.removeEventListener('scroll', headerBackgroundColorScroll);
     };
   }, []);
   return (
-   <div className={classnames('header_box', { no_opacity: isOpacity })}>
+   <div className={classnames('header_box', { no_opacity:  window.innerWidth>760?pc_isOpacity:isOpacity })}>
     <div className='header_info'>
-     <img src={isOpacity ? logo2 : logo1} alt="" />
+     <img src={( window.innerWidth>760?pc_isOpacity:isOpacity) ? logo2 : logo1} alt="" />
      <div className='button_box'>
       <button className='docbutton'>DOC</button>
       <button className='appbutton' onClick={()=>{

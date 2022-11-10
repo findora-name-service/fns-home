@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import search from './../../assets/image/search.svg'
-import Header from './../../components/Header'
+
+
 import './index.less';
 // Opacity
 export interface IHome1 {
@@ -14,7 +15,7 @@ const Home1: React.FC<IHome1>=({Opacity})=> {
   } 
 
   return (
-   <div className='home1_box' id="Home1" style={{opacity:`${Opacity}`}}>
+   <div className='home1_box hometest' id="Home1">
      <h2>Have your first privacy web3 identity</h2>
      <div className='search_box'>
       <div className='input_box'>

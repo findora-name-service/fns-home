@@ -1,6 +1,6 @@
-import React, { Suspense  } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import pageURL from './constants/pageURL';
+import React, { Suspense  } from 'react';
 
 import Home from './pages/Home';
 
