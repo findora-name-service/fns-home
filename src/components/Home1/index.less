@@ -1,10 +1,11 @@
 #tsparticles{
-width: 100%;
-height: 100%;
-position: relative !important;
-top: 0;
-left: 0;
-}
+  width: 100%;
+  height: 100%;
+  position: absolute !important;
+  top: 0;
+  left: 0;
+
+ }
 .home1_box{
   width: 100%;
   height: 100vh;
@@ -15,7 +16,6 @@ left: 0;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  position: relative;
   .scrollTip_box{
     position: absolute;
   }
@@ -30,7 +30,7 @@ left: 0;
     color: #FFFFFF;
   }
   .search_box{
-
+    z-index: 100;
     margin-top: 100px;
     width: 800px;
     border-bottom: 2px solid #FFFFFF;
@@ -90,6 +90,17 @@ left: 0;
 }
 
 @media only screen and (max-width: 576px) {
+  #tsparticles{
+    width: 100%;
+    height: 100%;
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    canvas{
+  position: relative !important;
+    } 
+   }
   .home1_box{
     padding-top:44px ;
     h2{

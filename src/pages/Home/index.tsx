@@ -35,7 +35,9 @@ useEffect(() => {
 
   return (
     <div className='home_box'>
-      <div className='pc_home'>
+      {
+         window.innerWidth>=760?
+         <div className='pc_home'>
       <Header pc_isOpacity={page===0?false:true} />
       <div id="fullpage" >
           <div className="section " id="section0"><Home1 /></div>
@@ -46,14 +48,18 @@ useEffect(() => {
       </div>
       <ScrollTip isTabnum={page+1}/>
       </div>
-        <div className='mo_home'>
-        <Header/>
-        <Home1 />
-        <Home2 />
-        <Home3 />
-        <Home4 />
-        <Home5 />
-        </div>
+      :
+      <div className='mo_home'>
+      <Header/>
+      <Home1 />
+      <Home2 />
+      <Home3 />
+      <Home4 />
+      <Home5 />
+      </div>
+      }
+      
+       
   </div>
   );
  

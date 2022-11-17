@@ -46,10 +46,15 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       >Search</button>
       
      </div>
-   </div>
-
-   < Particles  id = "tsparticles"  init = { particlesInit }  loaded = { particlesLoaded }             options={{
+        < Particles  
+      id = "tsparticles" 
+      init = { particlesInit } 
+      loaded = { particlesLoaded }   
+      options={{
                 fpsLimit: 120,
+                style:{
+                  position: 'relative ' ,
+                   },
                 particles: {
                   number: {
                     value: 80,
@@ -59,6 +64,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
                       value_area: 800,
                     },
                   },
+         
                   color: {
                     value: '#dedede',
                     animation: {
@@ -113,15 +119,20 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
                     },
                   },
                 },
+         
                 detectRetina: true,
-        
+
             
            
               }}
-/ > 
+/> 
+   </div>
+
+
 
 </>
   
   );
 }
+
 export default Home1;
