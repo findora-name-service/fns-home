@@ -32,7 +32,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
   return (
 <>
   <div className='home1_box hometest' id="Home1">
-     
+
      <h2>Have your first privacy web3 identity</h2>
      <div className='search_box'>
  
@@ -43,8 +43,9 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
       </div>
       <button 
       onClick={()=>{searchvalue!==''&&window.open(`https://app.fns.gg/search/${searchvalue}` ,'_self')}}
-      >Search</button>
-      
+      >
+        Search
+      </button>
      </div>
         < Particles  
       id = "tsparticles" 

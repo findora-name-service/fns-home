@@ -21,16 +21,16 @@ const pabeChange = (destination:any)=>{
   }, 500);
 }
 useEffect(() => {
-  window.innerWidth>=760&&
- new fullpage('#fullpage', {
-  licenseKey: 'YOUR_KEY_HERE',
-		sectionsColor: [],
-    onLeave:(origin:any, destination:any, direction:any, trigger:any)=>{
-      console.log(direction)
-      direction==='up'? setpage(destination.index):
-      pabeChange(destination)
-    },
-	});
+      window.innerWidth>=760&&
+  new fullpage('#fullpage', {
+    licenseKey: 'YOUR_KEY_HERE',
+      sectionsColor: [],
+      onLeave:(origin:any, destination:any, direction:any, trigger:any)=>{
+        console.log(direction)
+        direction==='up'? setpage(destination.index):
+        pabeChange(destination)
+      },
+    });
   },[]);
 
   return (
