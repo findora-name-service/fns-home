@@ -25,7 +25,7 @@ const Home5: React.FC<IHome5>=({Opacity})=> {
             expandIcon={({ isActive }) => (isActive ? <img src={Img2} alt="" /> : <img src={Img1} alt="" />)}
           >
             <Panel header="What is Findora Name Service (FNS)?" key="1">
-              <p>{'Findora Name Service is a distributed, open and extensible naming system based on the Findora blockchain focused on privacy pres.'}</p>
+              <p>{'Findora Name Service is a distributed, open and extensible naming system based on the Findora blockchain focused on privacy preservation.'}</p>
             </Panel>
             <Panel header="Can FNS domains be transferred ?" key="2">
               <p>{'Yes, FNS is essentially an FRC-721 non-fungible token that can be bought, sold, or transferred.'}</p>
