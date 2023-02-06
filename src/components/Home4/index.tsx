@@ -14,10 +14,10 @@ export interface IHome4 {
 
 const Home4: React.FC<IHome4>=({Opacity})=> {
   const list = [
-    ['2022.Q4  ', 'FNS official launch on findora',  'l1'],
-    ['2023.Q1   ', '.fra support more on-chain assets and social data integration',  'l2'],
-    ['2023.Q2  ', 'Enable findora zero-knowledge proof to hide the ownership',  'l3'],
-    ['2023.Q3  ', 'FNS links Web2/Web3 and integrates on-chain and off-chain data. It enhances the interactive experience of gaming, social, DAO, community governance, etc. ', 'l4'],
+    ['2022.Q4  ', 'FNS official launch on Findora',  'l1'],
+    ['2023.Q1   ', '.fra support for more on-chain assets and social data integration',  'l2'],
+    ['2023.Q2  ', 'Zero-knowledge proof integration to hide ownership.',  'l3'],
+    ['2023.Q3  ', 'Deploy selective disclosure of personal information through data ownership with FNS. The goal : is to give users control of their identity in gaming, social media, DAOs, and community governance.  ', 'l4'],
   ];
   const cardListDom:any = useRef(null);
   const [initWidth, setInitWidth] = useState<number>();

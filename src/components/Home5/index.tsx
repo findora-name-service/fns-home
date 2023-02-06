@@ -16,7 +16,7 @@ const Home5: React.FC<IHome5>=({Opacity})=> {
   return (
 <div style={{    overflowY:'scroll',height:'100vh'}}>
     <section className="Home5 hometest" id="Home5">
-      <h2>A&Q</h2>
+      <h2>FAQ</h2>
       <Space direction="vertical" >
           <Collapse
           accordion
@@ -24,20 +24,20 @@ const Home5: React.FC<IHome5>=({Opacity})=> {
             defaultActiveKey={['1']}
             expandIcon={({ isActive }) => (isActive ? <img src={Img2} alt="" /> : <img src={Img1} alt="" />)}
           >
-            <Panel header="What is findora name service ?" key="1">
-              <p>{'Findora Name Service is a distributed, open and extensible naming system based on the findora blockchain.'}</p>
+            <Panel header="What is Findora Name Service (FNS)?" key="1">
+              <p>{'Findora Name Service is a distributed, open and extensible naming system based on the Findora blockchain focused on privacy pres.'}</p>
             </Panel>
-            <Panel header="FNS can be transferred ?" key="2">
-              <p>{'Yes, FNS is essentially a FRC-721 non-fungible token that can be bought, sold or transferred.'}</p>
+            <Panel header="Can FNS domains be transferred ?" key="2">
+              <p>{'Yes, FNS is essentially an FRC-721 non-fungible token that can be bought, sold, or transferred.'}</p>
             </Panel>
-            <Panel header="How FNS implements the hidden function ?" key="3">
-              <p>{`Using findora's zero-knowledge proof, transfer FNS from E VM to UTXO to realize the decoupling of ownership and FNS.`}</p>
+            <Panel header="How does FNS protect my identity? " key="3">
+              <p>{`Using zero-knowledge proofs, assets can be held through an FNS on Findora’s utxo layer, decoupling them from your on-chain address in an EVM enviroment.`}</p>
             </Panel>
-            <Panel header="Have a maximum of several FNS ?" key="4">
-              <p>{'There is theoretically no upper limit to the FNS you can have.'}</p>
+            <Panel header="How many FNS usernames can I have?" key="4">
+              <p>{'There is theoretically no to the number of FNS identities you can have.'}</p>
             </Panel>
-            <Panel header="What to do when FNS expires ?" key="5">
-              <p>{ `When the FNS expires, it is called "grace period" within 30 days, and the system will retain the ownership of the user's FNS. After more than 30 days, the FNS will return to the public registry and can be registered by other users.`}</p>
+            <Panel header="Can my FNS expire?" key="5">
+              <p>{ `Your FNS ownership lasts for one year, after which it will expire unless renewed. There is a 30-day grace period after a year of ownership where you can still renew the FNS if you forgot to do so before. After that period, however, the FNS will return to the public registry where other users can take ownership of it.  `}</p>
             </Panel>
           </Collapse>
         

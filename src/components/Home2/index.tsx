@@ -15,9 +15,9 @@ const Home2: React.FC<IHome2>=({Opacity})=> {
 
     <div className="Home2 hometest" id="Home2">
      <div className='Home2_box'>
-      <h2 >Recommend <br /> to join .fra to get rewards</h2>
-      <h3>FNS registration with .fra can get the registration fee waiver, and the referrer can also get a commission</h3>
-      <button>learn more</button>
+      <h2 >Refer friends, get rewards </h2>
+      <h3>When you refer someone to register a .fra address not only can you get a commission, but they can get their registration fee waived.</h3>
+      <button>Learn More</button>
      </div>
      <img src={Logo} alt="" />
 

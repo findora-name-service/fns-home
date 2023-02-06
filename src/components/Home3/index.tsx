@@ -13,8 +13,8 @@ const Home3: React.FC<IHome3>=({Opacity})=> {
     <section className="Home3 hometest" id="Home3">
      <img src={Logo} alt="" />
       <div className='Home3_box'>
-      <h2 >All in one</h2>
-      <h3>Unified identity means absolute flexibility to use one, many or all usernames on any application or blockchain, manage and receive assets on multiple chains</h3>
+      <h2 >One Name, Many Identities</h2>
+      <h3>Your .fra username lets you send and receive assets on any chain or dApp while protecting your actual on-chain address. Its a simple way to manage assets and protect your privacy.</h3>
       <button>launch App</button>
      </div>
 

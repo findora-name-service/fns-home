@@ -33,7 +33,7 @@ const particlesLoaded = useCallback(async (container: Container | undefined) => 
 <>
   <div className='home1_box hometest' id="Home1">
 
-     <h2>Have your first privacy web3 identity</h2>
+     <h2>Grab your first privacy web3 identity</h2>
      <div className='search_box'>
  
       <div className='input_box'>
