@@ -14,7 +14,7 @@ function Footer() {
           <li onClick={()=>{window.open('https://github.com/orgs/findora-name-service/repositories','_self')}}>Github</li>
           <li onClick={()=>{window.open('https://medium.com/@fns.gg','_self')}} >Medium</li>
         </ul>
-        <p>© 2022 Findora name service</p>
+        <p>© 2023 Findora name service</p>
     </div>
    </div>
   );
