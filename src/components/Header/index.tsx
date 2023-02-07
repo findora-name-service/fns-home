@@ -49,7 +49,7 @@ const Header: React.FC<IHeader>=({pc_isOpacity})=> {
      <img src={( window.innerWidth>760?pc_isOpacity:isOpacity) ? logo2 : logo1} alt="" />
      <div className='button_box'>
       <button className='docbutton' onClick={()=>{
-        window.open('http://docs.fns.gg/','_self')
+        window.open('https://docs.fns.gg/untitled/introduction/what-is-fns','_self')
       }}>DOCS</button>
       <button className='appbutton' onClick={()=>{
         window.open('https://app.fns.gg/','_self')
