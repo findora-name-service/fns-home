@@ -17,7 +17,9 @@ const Home2: React.FC<IHome2>=({Opacity})=> {
      <div className='Home2_box'>
       <h2 >Refer friends, get rewards </h2>
       <h3>When you refer someone to register a .fra address not only can you get a commission, but they can get their registration fee waived.</h3>
-      <button>Learn More</button>
+      <button onClick={()=>{
+        window.open('http://docs.fns.gg/','_self')
+      }} >Learn More</button>
      </div>
      <img src={Logo} alt="" />
 
