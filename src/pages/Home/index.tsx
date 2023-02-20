@@ -5,6 +5,7 @@ import Home1 from './../../components/Home1';
 
 import Home3 from './../../components/Home3';
 import Home4 from './../../components/Home4';
+import Home6 from './../../components/Home6';
 import ScrollTip from './../../components/scrollTip';
 import fullpage from 'fullpage.js';
 import Header from './../../components/Header';
@@ -41,10 +42,12 @@ useEffect(() => {
       <Header pc_isOpacity={page===0?false:true} />
       <div id="fullpage" >
           <div className="section " id="section0"><Home1 /></div>
+          <div className="section" id="section6">  <Home6/></div>
           <div className="section" id="section1"><Home2 /></div>
           <div className="section" id="section2">  <Home3 /></div>
           <div className="section" id="section3">  <Home4/></div>
           <div className="section" id="section4"  style={{ overflowY:'scroll'}}> <Home5 /></div>
+
       </div>
       <ScrollTip isTabnum={page+1}/>
       </div>
@@ -52,6 +55,7 @@ useEffect(() => {
       <div className='mo_home'>
       <Header/>
       <Home1 />
+      <Home6 />
       <Home2 />
       <Home3 />
       <Home4 />

@@ -17,8 +17,9 @@ const scrollTip: React.FC<IscrollTip> = ({isTabnum}) => {
         <li></li>
         <li></li>
         <li></li> 
+        <li></li> 
       </ul>
-      <p className={classnames(`allpagenum${isTabnum}`)}>05</p>
+      <p className={classnames(`allpagenum${isTabnum}`)}>06</p>
     </section>
    
   );
