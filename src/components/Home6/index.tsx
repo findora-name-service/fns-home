@@ -16,9 +16,9 @@ export interface IHome6 {
 
 const Home6: React.FC<IHome6>=({Opacity})=> {
   const list = [
-    ['Pre-registration 1', 'Follow and RT, submit an FNS of more than 5 characters without restriction',  'l1','02.20 0:00 - 02.26 23:59'],
-    ['Pre-registration 2', 'interact with findora chain once before snapshot（02.19） or hold FRA can pre-register FNS domain names again',  'l2','02.24 0:00 - 02.26 23:59'],
-    ['Pre-registration Claim ', '',  'l3','02.27 0:00 - 02.28 23:59'],
+    ['Pre-Registration 1', 'Follow and RT, submit an FNS of more than 5 characters without restriction',  'l1','02.20 0:00 - 02.26 23:59'],
+    ['Pre-Registration 2', 'interact with findora chain once before snapshot（02.19） or hold FRA can pre-register FNS domain names again',  'l2','02.24 0:00 - 02.26 23:59'],
+    ['Pre-Registration Claim ', '',  'l3','02.27 0:00 - 02.28 23:59'],
     ['Hello ETHDenver', 'A limited number of 10,000 FNS will be sold for free（only need gas）. without restriction.', 'l4','03.01 0:00 - 03.05 0:00'],
   ];
 

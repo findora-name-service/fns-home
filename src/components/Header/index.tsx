@@ -50,7 +50,7 @@ const Header: React.FC<IHeader>=({pc_isOpacity})=> {
      <div className='button_box'>
      <button className='prebutton' onClick={()=>{
         window.open('https://app.fns.gg/airdrop ','_self')
-      }}>Pre-registration</button>
+      }}>Pre-Registration</button>
       <button className='docbutton' onClick={()=>{
         window.open('https://docs.fns.gg/untitled/introduction/what-is-fns','_self')
       }}>DOCS</button>
