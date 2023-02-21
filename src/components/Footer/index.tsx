@@ -13,6 +13,8 @@ function Footer() {
           <li onClick={()=>{window.open('https://twitter.com/FnsInfo','_self')}}>Twitter</li>
           <li onClick={()=>{window.open('https://github.com/orgs/findora-name-service/repositories','_self')}}>Github</li>
           <li onClick={()=>{window.open('https://medium.com/@fns.gg','_self')}} >Medium</li>
+          <li onClick={()=>{window.open('https://discord.gg/QCZjDFc9Vu','_self')}} >Discord </li>
+
         </ul>
         <p>© 2023 Findora Name Service</p>
     </div>

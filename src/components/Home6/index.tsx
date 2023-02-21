@@ -11,10 +11,10 @@ export interface IHome6 {
 
 const Home6: React.FC<IHome6>=({Opacity})=> {
   const list = [
-    ['Pre-Registration 1', 'Follow and RT, submit an FNS of more than 4 characters without restriction',  'l1','02.20 0:00 - 02.27 0:00'],
-    ['Pre-Registration 2', 'interact with findora chain once before snapshot（02.19） or hold FRA can pre-register FNS domain names again',  'l2','02.24 0:00 - 02.27 0:00'],
-    ['Pre-Registration Claim ', '',  'l3','02.27 0:00 - 03.01 0:00'],
-    ['Hello ETHDenver', 'A limited number of 10,000 FNS will be sold for free（only need gas）. without restriction.', 'l4','03.01 0:00 - 03.05 0:00'],
+    ['Pre-Registration Round 1 ', 'Follow, retweet and submit your desired FNS (of more than 4 characters).',  'l1','02.19 0:00 - 02.27 0:00'],
+    ['Pre-Registration Round 2 ', 'iSubmit your desired FNS if the following criteria is met: your wallet has interacted with the Findora chain before (02.19 snapshot) or hold FRA tokens.',  'l2','02.24 0:00 - 02.27 0:00'],
+    ['Pre-Registration Claim ', 'Claim your submitted FNS domain(s).',  'l3','02.27 0:00 - 03.01 0:00'],
+    ['Hello ETHDenver', 'A limited number of 10,000 FNS domains will be given to the Findora community for free in celebration of EthDenver!', 'l4','03.01 0:00 - 03.05 0:00'],
   ];
 
 
