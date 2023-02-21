@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import logo2 from './../../assets/image/logo2.svg'
 
 import './index.less';
@@ -14,7 +14,7 @@ function Footer() {
           <li onClick={()=>{window.open('https://github.com/orgs/findora-name-service/repositories','_self')}}>Github</li>
           <li onClick={()=>{window.open('https://medium.com/@fns.gg','_self')}} >Medium</li>
         </ul>
-        <p>© 2023 Findora name service</p>
+        <p>© 2023 Findora Name Service</p>
     </div>
    </div>
   );
