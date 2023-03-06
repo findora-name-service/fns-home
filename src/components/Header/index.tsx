@@ -48,9 +48,9 @@ const Header: React.FC<IHeader>=({pc_isOpacity})=> {
     <div className='header_info'>
      <img src={( window.innerWidth>760?pc_isOpacity:isOpacity) ? logo2 : logo1} alt="" />
      <div className='button_box'>
-     <button className='prebutton' onClick={()=>{
+     {/* <button className='prebutton' onClick={()=>{
         window.open('https://app.fns.gg/airdrop ','_self')
-      }}>Pre-Registration</button>
+      }}>Pre-Registration</button> */}
       <button className='docbutton' onClick={()=>{
         window.open('https://docs.fns.gg/untitled/introduction/what-is-fns','_self')
       }}>DOCS</button>
